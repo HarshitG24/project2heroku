@@ -19,11 +19,9 @@ router.delete("/deleteUser/:user", async (req, res) => {
   res.status(status).send({ code: status });
 });
 
-
 router.delete("/deleteRecords/:user", async (req, res) => {
   const status = await db.deleteRecords(req?.params?.user || {});
   res.status(status).send({ code: status });
 });
-
 
 export default router;

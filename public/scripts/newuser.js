@@ -27,7 +27,7 @@ createBtn.addEventListener("click", async () => {
     body: JSON.stringify(newUser),
   };
 
-  const resp = await fetch("/newuser/createUser", opts);
+  const resp = await fetch("/api/newuser/createUser", opts);
   if (resp.status == 200 && resp.statusText == "OK") {
     window.location.replace("/categories.html");
   } else {

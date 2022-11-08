@@ -4,7 +4,7 @@
   "builds": [{ "src": "./bin/www.js", "use": "@vercel/node" }],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/api/(.*)",
       "dest": "app.js"
     },
     {
